@@ -19,7 +19,24 @@ body {
 
 .nav-bar h1{
     color: #fff;
+}
+
+.logo-container{
+    display: flex;
+    height: 70px;
+    width: 200px;
+    justify-content: center;
     margin-left: 120px;
+}
+
+.logo-container h1{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.logo-image{
+    width: 40px;
+    height: 60px;
 }
 
 .nav-buttons {
@@ -90,6 +107,7 @@ body {
     color: rgb(120,114,167);
     font-size: 18px;
     margin-right: 10px;
+    transition: 0.35s;
 }
 
 .github-button:hover {
@@ -175,7 +193,7 @@ body {
     }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 876px) {
     .nav-bar {
         flex-direction: column;
     }
@@ -184,9 +202,15 @@ body {
         display: none;
     }
 
+    .logo-image{
+        margin-bottom: 15px;
+        margin-left: -40px;
+    }
+
     .nav-bar h1{
         margin: 0 auto;
         margin-bottom: 10px;
+        margin-left: 10px;
     }
 
     .nav-buttons {
@@ -224,5 +248,11 @@ body {
     }
     .project-container1{
         
+    }
+}
+
+@media (max-width: 359px){
+    .documentation-button{
+        margin-top: 15px;
     }
 }
