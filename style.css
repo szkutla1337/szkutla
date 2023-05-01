@@ -208,6 +208,10 @@ body {
         justify-content: center;
     }
 
+    .projects-button{
+        width: 130px;
+    }
+
 }
 
 @media (max-width: 454px){
